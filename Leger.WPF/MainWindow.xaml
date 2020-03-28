@@ -1,0 +1,41 @@
+﻿<Window x:Class="Leger.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Leger.WPF"
+        mc:Ignorable="d"
+        Title="Mijn leger" Height="679.363" Width="1375.9" Loaded="Window_Loaded">
+    <Grid>
+
+        <ListBox x:Name="lstGeneraal" HorizontalAlignment="Left" Height="154" Margin="10,52,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="lstGeneraal_SelectionChanged"/>
+        <Label Content="Generaals" HorizontalAlignment="Left" Height="24" Margin="10,23,0,0" VerticalAlignment="Top" Width="164"/>
+        <Label Content="Majoors" HorizontalAlignment="Left" Height="24" Margin="198,23,0,0" VerticalAlignment="Top" Width="164"/>
+        <ListBox x:Name="lstMajoors" HorizontalAlignment="Left" Height="154" Margin="198,52,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="lstMajoors_SelectionChanged"/>
+        <Label Content="Luitenanten" HorizontalAlignment="Left" Height="24" Margin="382,23,0,0" VerticalAlignment="Top" Width="164" />
+        <ListBox x:Name="lstLuitenanten" HorizontalAlignment="Left" Height="154" Margin="382,52,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="lstLuitenanten_SelectionChanged" />
+        <Label Content="Adjudanten" HorizontalAlignment="Left" Height="24" Margin="591,23,0,0" VerticalAlignment="Top" Width="164" />
+        <Label Content="Sergeanten" HorizontalAlignment="Left" Height="24" Margin="774,23,0,0" VerticalAlignment="Top" Width="164" />
+        <ListBox x:Name="lstAdjudanten" HorizontalAlignment="Left" Height="154" Margin="591,52,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="lstAdjudanten_SelectionChanged" />
+        <ListBox x:Name="lstSergeanten" HorizontalAlignment="Left" Height="154" Margin="774,52,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="lstSergeanten_SelectionChanged" />
+        <Label Content="Korporaals" HorizontalAlignment="Left" Height="24" Margin="990,23,0,0" VerticalAlignment="Top" Width="164" />
+        <Label Content="Soldaten" HorizontalAlignment="Left" Height="24" Margin="1182,23,0,0" VerticalAlignment="Top" Width="164" />
+        <ListBox x:Name="lstKorporaals" HorizontalAlignment="Left" Height="154" Margin="990,52,0,0" VerticalAlignment="Top" Width="164" RenderTransformOrigin="1.838,0.588" SelectionChanged="lstKorporaals_SelectionChanged" />
+        <ListBox x:Name="lstSoldaten" HorizontalAlignment="Left" Height="154" Margin="1182,52,0,0" VerticalAlignment="Top" Width="164" RenderTransformOrigin="1.838,0.588" SelectionChanged="lstSoldaten_SelectionChanged" />
+        <GroupBox Header="Details militair : " HorizontalAlignment="Left" Height="372" Margin="10,239,0,0" VerticalAlignment="Top" Width="536">
+            <Grid>
+                <Label Content="Naam : " HorizontalAlignment="Left" Height="28" Margin="4,19,0,0" VerticalAlignment="Top" Width="111"/>
+                <Label x:Name="lblNaam" Content="-" HorizontalAlignment="Left" Height="28" Margin="144,19,0,0" VerticalAlignment="Top" Width="347"/>
+                <Label Content="Graad : " HorizontalAlignment="Left" Height="28" Margin="4,52,0,0" VerticalAlignment="Top" Width="111"/>
+                <Label x:Name="lblGraad" Content="-" HorizontalAlignment="Left" Height="28" Margin="144,52,0,0" VerticalAlignment="Top" Width="347"/>
+                <Label x:Name="lblSterren" Content="" HorizontalAlignment="Left" Height="36" Margin="144,80,0,0" VerticalAlignment="Top" Width="347" FontFamily="Wingdings 2" FontSize="24"/>
+                <Label x:Name="lblTotaalOndergeschikten" Content="-" HorizontalAlignment="Left" Height="28" Margin="144,121,0,0" VerticalAlignment="Top" Width="347"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Details leger : " HorizontalAlignment="Left" Height="372" Margin="618,239,0,0" VerticalAlignment="Top" Width="536">
+            <Grid>
+                <Label x:Name="lblSoortOndergeschikten" Content="-" HorizontalAlignment="Left" Height="329" Margin="10,10,0,0" VerticalAlignment="Top" Width="504"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
